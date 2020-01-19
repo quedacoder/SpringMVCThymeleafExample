@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Thymeleaf Template</title>
+		
+		<!-- Referencing Stylesheets -->
+		<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+		
+		<!-- Referencing Javascript files -->
+		<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<h1>Welcome, Thymeleaf Application</h1>
+			<p th:text="'Time on the server is ' + ${newDate}" />
+		</div>
+		
+		<!-- Referencing Javascript files -->
+		<script type="text/javascript" th:src="@{js/jquery-3.4.1.slim.min.js}"></script>
+		<script type="text/javascript" th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js}"
+		        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	</body>
+</html>
